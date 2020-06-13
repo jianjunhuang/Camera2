@@ -554,8 +554,12 @@ public class Storage
 
         File dir = new File(DIRECTORY);
         dir.mkdirs();
+<<<<<<< HEAD
         dir.setWritable(true);
         if (!dir.isDirectory())
+=======
+        if (!dir.isDirectory() || !dir.canWrite())
+>>>>>>> e9ff4de77dc68a72c17b03749e77672d98fd5cf7
         {
             return UNAVAILABLE;
         }

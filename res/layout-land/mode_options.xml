@@ -14,14 +14,24 @@
      limitations under the License.
 -->
 
+<<<<<<< HEAD
 <com.android.camera.widget.ModeOptions xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+=======
+<com.android.camera.widget.ModeOptions
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:camera="http://schemas.android.com/apk/res/com.android.camera2"
+>>>>>>> e9ff4de77dc68a72c17b03749e77672d98fd5cf7
     android:id="@+id/mode_options"
     android:layout_width="@dimen/mode_options_height"
     android:layout_height="match_parent"
     android:layout_gravity="right"
     android:visibility="invisible"
+<<<<<<< HEAD
     android:background="#00000000">
+=======
+    android:background="#00000000" >
+>>>>>>> e9ff4de77dc68a72c17b03749e77672d98fd5cf7
     <com.android.camera.ui.RadioOptions
         android:id="@+id/mode_options_exposure"
         android:layout_width="match_parent"
@@ -29,7 +39,11 @@
         android:orientation="vertical"
         android:gravity="center"
         android:background="@null"
+<<<<<<< HEAD
         app:selected_drawable="@drawable/button_background_selected_photo"
+=======
+        camera:selected_drawable="@drawable/button_background_selected_photo"
+>>>>>>> e9ff4de77dc68a72c17b03749e77672d98fd5cf7
         android:visibility="invisible" >
         <ImageButton
             android:id="@+id/exposure_p2"
@@ -75,7 +89,11 @@
         android:orientation="vertical"
         android:gravity="center"
         android:background="@null"
+<<<<<<< HEAD
         app:selected_drawable="@drawable/button_background_selected_pano"
+=======
+        camera:selected_drawable="@drawable/button_background_selected_pano"
+>>>>>>> e9ff4de77dc68a72c17b03749e77672d98fd5cf7
         android:visibility="invisible" >
         <!-- pano image buttons, ids, and descriptions are added at runtime -->
     </com.android.camera.ui.RadioOptions>
@@ -94,6 +112,7 @@
         <com.android.camera.MultiToggleImageButton
             android:id="@+id/camera_toggle_button"
             style="@style/ModeOption"
+<<<<<<< HEAD
             app:imageIds="@array/camera_id_icons"
             app:contentDescriptionIds="@array/camera_id_descriptions" />
         <com.android.camera.MultiToggleImageButton
@@ -116,6 +135,30 @@
             style="@style/ModeOption"
             app:imageIds="@array/countdown_duration_icons"
             app:contentDescriptionIds="@array/countdown_duration_descriptions" />
+=======
+            camera:imageIds="@array/camera_id_icons"
+            camera:contentDescriptionIds="@array/camera_id_descriptions" />
+        <com.android.camera.MultiToggleImageButton
+            android:id="@+id/flash_toggle_button"
+            style="@style/ModeOption"
+            camera:imageIds="@array/camera_flashmode_icons"
+            camera:contentDescriptionIds="@array/camera_flash_descriptions" />
+        <com.android.camera.MultiToggleImageButton
+            android:id="@+id/hdr_plus_toggle_button"
+            style="@style/ModeOption"
+            camera:imageIds="@array/pref_camera_hdr_plus_icons"
+            camera:contentDescriptionIds="@array/hdr_plus_descriptions" />
+        <com.android.camera.MultiToggleImageButton
+            android:id="@+id/grid_lines_toggle_button"
+            style="@style/ModeOption"
+            camera:imageIds="@array/grid_lines_icons"
+            camera:contentDescriptionIds="@array/grid_lines_descriptions" />
+        <com.android.camera.MultiToggleImageButton
+            android:id="@+id/countdown_toggle_button"
+            style="@style/ModeOption"
+            camera:imageIds="@array/countdown_duration_icons"
+            camera:contentDescriptionIds="@array/countdown_duration_descriptions" />
+>>>>>>> e9ff4de77dc68a72c17b03749e77672d98fd5cf7
         <ImageButton
             android:id="@+id/exposure_button"
             style="@style/ModeOption"

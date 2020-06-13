@@ -15,7 +15,11 @@
 -->
 
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     xmlns:app="http://schemas.android.com/apk/res-auto"
+=======
+    xmlns:camera="http://schemas.android.com/apk/res/com.android.camera2"
+>>>>>>> e9ff4de77dc68a72c17b03749e77672d98fd5cf7
     android:layout_width="match_parent"
     android:layout_height="match_parent">
         <ImageButton
@@ -34,17 +38,29 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@null"
+<<<<<<< HEAD
             app:imageIds="@array/camera_flashmode_icons" />
+=======
+            camera:imageIds="@array/camera_flashmode_icons" />
+>>>>>>> e9ff4de77dc68a72c17b03749e77672d98fd5cf7
         <com.android.camera.MultiToggleImageButton
             android:id="@+id/camera_toggle_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@null"
+<<<<<<< HEAD
             app:imageIds="@array/camera_id_icons" />
+=======
+            camera:imageIds="@array/camera_id_icons" />
+>>>>>>> e9ff4de77dc68a72c17b03749e77672d98fd5cf7
         <com.android.camera.MultiToggleImageButton
             android:id="@+id/hdr_plus_toggle_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@null"
+<<<<<<< HEAD
             app:imageIds="@array/pref_camera_hdr_plus_icons" />
+=======
+            camera:imageIds="@array/pref_camera_hdr_plus_icons" />
+>>>>>>> e9ff4de77dc68a72c17b03749e77672d98fd5cf7
 </merge>
